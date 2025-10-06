@@ -1,0 +1,80 @@
+Título del laboratorio: Explotación de MS17-010 (EternalBlue) con Metasploit
+
+Objetivo:
+Demostrar la explotación de la vulnerabilidad MS17-010 en una máquina Windows 7 SP1, utilizando herramientas de escaneo, reconocimiento y explotación en Kali Linux.
+
+Entorno de trabajo:
+- Kali Linux (máquina atacante)
+- Windows 7 SP1 (máquina víctima)
+- Red local virtual (VirtualBox)
+
+Herramientas utilizadas:
+- Nmap
+- ARP-Scan
+- Metasploit Framework
+- Ping
+- Wireshark (opcional)
+
+Pasos principales:
+1. Identificación de la IP de la víctima con `ip add` y `arp-scan`
+2. Reconocimiento del sistema operativo mediante TTL (`ping`)
+3. Escaneo de puertos y servicios con `nmap`
+4. Detección de vulnerabilidad MS17-010 (`nmap --script vuln`)
+5. Explotación con Metasploit (`ms17_010_eternalblue`)
+6. Obtención de sesión remota con Meterpreter
+
+Resultados obtenidos:
+- Acceso remoto exitoso a la máquina víctima
+- Capturas de pantalla del proceso en la carpeta `evidencias/`
+- Informe técnico en PDF disponible en `informe-tecnico/`
+
+Aprendizajes clave:
+- Identificación de sistemas vulnerables en red local
+- Uso de Metasploit en entorno controlado
+- Interpretación de resultados de escaneo
+- Redacción técnica de evidencias
+
+Notas adicionales:
+Este laboratorio forma parte del portafolio de preparación para la certificación eJPTv2 y fue desarrollado en un entorno seguro y ético.
+
+---
+
+Lab Title: Exploiting MS17-010 (EternalBlue) with Metasploit
+
+Objective:
+Demonstrate the exploitation of the MS17-010 vulnerability on a Windows 7 SP1 machine using scanning, reconnaissance, and exploitation tools in Kali Linux.
+
+Environment:
+- Kali Linux (attacker machine)
+- Windows 7 SP1 (victim machine)
+- Virtual local network (VirtualBox)
+
+Tools used:
+- Nmap
+- ARP-Scan
+- Metasploit Framework
+- Ping
+- Wireshark (optional)
+
+Main steps:
+1. Identify victim IP using `ip add` and `arp-scan`
+2. OS fingerprinting via TTL (`ping`)
+3. Port and service scanning with `nmap`
+4. Vulnerability detection (`nmap --script vuln`)
+5. Exploitation using Metasploit (`ms17_010_eternalblue`)
+6. Remote session established with Meterpreter
+
+Results:
+- Successful remote access to the victim machine
+- Screenshots of the process stored in `evidencias/`
+- Technical report in PDF available in `informe-tecnico/`
+
+Key learnings:
+- Identifying vulnerable systems in a local network
+- Using Metasploit in a controlled environment
+- Interpreting scan results
+- Writing technical documentation
+
+Additional notes:
+This lab is part of the eJPTv2 certification preparation portfolio and was conducted in a safe and ethical environment.
+
